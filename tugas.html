@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="inkayacu.ico" type="image/x-icon" style="border-radius: 50px;">
+    <title>Tugas</title>
+</head>
+<!-- Backround -->
+<body background="fd.jpg">
+    <header>
+    <h1>
+        <!-- Text animasi -->
+      <div id="text-container"> 
+		Tugas yang sudah dikerjakan
+        </div>      
+        <script> 
+            const textContainer = 
+                document.getElementById("text-container"); 
+            
+            let hue = 0; 
+    
+            setInterval(() => { 
+                hue = (hue + 1) % 360; 
+                const color = `hsl(${hue}, 100%, 60%)`; 
+                textContainer.style.color = color; 
+            }, 40); 
+    </script> 
+     </header>
+      </h1>
+      <article>
+      <ol>
+          <li><a href="https://fawaz0.github.io/Waz.hoverboard./">Tugas Hoverboard HTML CSS & JavaScript</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ol>
+    </article>
+    <button onclick="goBack()">Kembali
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</button>
+</body>
+</html>

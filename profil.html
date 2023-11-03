@@ -1,0 +1,68 @@
+<!-- deklarasi tipe dokumen, yang menentukan bahwa dokumen tersebut 
+     ditulis dalam HTML5. -->
+<!DOCTYPE html>
+<!-- tag pembuka untuk dokumen HTML -->
+<html>
+   <head>
+      <title>Website Profile</title>
+      <link rel="stylesheet" href="style.css" />
+      <!-- Link image yang menuju file ico atau gambar -->
+      <link rel="icon" href="inkayacu.ico" type="image/x-icon" style="border-radius: 50px;">
+      </head> 
+      <!-- Backround gambar yang sudah disesuaikan ukurannya  -->
+   <body background="fd.jpg">
+      <header>  
+         <!--Judul Menggunakan Text efek animasi JavaScript  -->
+      <h1><div id="text-container"> 
+		Selamat Datang Di Website Profilku 
+        </div>      
+        <script> 
+            const textContainer = 
+                document.getElementById("text-container"); 
+            
+            let hue = 0; 
+    
+            setInterval(() => { 
+                hue = (hue + 1) % 360; 
+                const color = `hsl(${hue}, 100%, 60%)`; 
+                textContainer.style.color = color; 
+            }, 40); 
+    </script></h1>
+    <!-- Navbar atau navigasi bar merupakan salah satu elemen 
+         pada HTML yang dibuat untuk mempresentasikan link navigasi. 
+         disini ada 3 link yang akan digunakan-->
+      <nav >
+         <a href="tugas.html">Tugas</a>
+         <a href=sosmed.html>Sosialmedia</a>
+         <a href=kontak.html>Kontak</a>
+      </nav>
+      <hr>
+      <!-- Box untuk gambar dan radius gambar -->
+      <div class="box">
+        <img align="right" src="hmm.png" width="200" height="200"  style="border-radius: 50%;">             
+      </div>
+      <!-- Menggunakan article yang merupakan tag ditulis sebagai element HTML 
+           dalam format <article>.. </article> ,
+           digunakan untuk memberi mark up sebuah 
+           independent content, artinya element itu dapat berdiri sendiri sebagai 
+           sebuah konten utuh yang tidak terikat dengan konten lain (element lain). -->
+            <article>
+                        <div id="nama">
+                            <h1>Fawaz</h1>
+                        </div>
+                        <p>Mahasiswa<strong>
+                                <a href="https://unucirebon.ac.id" target="_blank">Universitas Nahdlatul Ulama Cirebon</a>
+                            </strong></p>
+                        <p><strong>Fakultas Ilmu Komputer</strong></em></p>
+                        <p>Program Studi Teknik Informatika</em></p>
+                    </article>         
+    </header>
+    <hr>
+    <!-- Bagian akhir dihalaman web yang terletak dibagian bawah  -->
+    <div class="footer">
+        Copyright by Fawaz
+     </div>
+     
+    </body>
+    
+</html>

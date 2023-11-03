@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+<title> 
+		Text Animation with JavaScript 
+	</title> 
+	<style> 
+		#text-container { 
+			font-size: 32px; 
+			text-align: center; 
+		} 
+	</style> 
+</head> 
+<!-- <div id="nama" style="text-align: right;">
+	<h1>Fawaz</h1>
+<p>Mahasiswa<strong>
+		<a href="https://unucirebon.ac.id" target="_blank">Universitas Nahdlatul Ulama Cirebon</a>
+	</strong></p>
+<p><strong>Fakultas Ilmu Komputer</strong></em></p>
+<p>Program Studi Teknik Informatika</p>
+</div> -->
+<body> 
+	<div id="text-container"> 
+		GeeksforGeeks 
+	</div> 
+	<script> 
+		const textContainer = 
+			document.getElementById("text-container"); 
+		
+		let hue = 0; 
+
+		setInterval(() => { 
+			hue = (hue + 1) % 360; 
+			const color = `hsl(${hue}, 100%, 50%)`; 
+			textContainer.style.color = color; 
+		}, 50); 
+</script> 
+</body> 
+</html>
